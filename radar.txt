@@ -1,0 +1,96 @@
+
+
+26
+PULSE DOPPLER RADAR
+
+- As oppsosed to MTI radar where the prf is chosen so that there are no range ambiguities. 
+
+- since the first blind speed is a function of prf 
+so increasing the prf will reduce the effect of blind speed up to a certain range 
+
+- more precise: high-prf doppler radar - no blind speeds  in the doppler space 
+
+27
+
+Will try to describe the pulse doppler radar in terms of this airborne geometry. The figure is showing the main beam of the antenna, the antenna sidelobes which illiminate clutter 
+
+DESCRIPTION of the line spectrum (it's not a real line spectrum due to that the radar has a finite time on target.)
+
+- At the carrier frequency f0, echo directly below the target. No doppler frequency shift, since it relative velocity is zero. Can also be leackage of transmitter to reciever. Can be removed by notch filtering
+
+- Sidelobe clutter +-2v/l, v is the absolte velocity
+
+- large region of sidelobe clutter, needs a high imporvement factor. 
+
+- bank of narrowband doppler filters are used to detect aircraft in the clutter region 
+
+
+
+Resulution of Range ambiguis 
+
+ - Multiple prfs. Three prf are usally ised
+ - Increase the posibility of ghosting. That is more than one target present and it lies in the within the abigous range of more than one prf. That is why the prf are usally shosen as relatively primes integers. No common factors 
+ - can use the chinese reminder theorem to calculate the true range from unambigous measurements. 
+
+
+
+
+- Eclipsing loss 
+ * The pulse dopler radar can't receive when it is transmitting, this can resault in a loss of the echo signal since the reciver is gated or turned off. this is called eclipsing loss. 
+
+- varies over as the target range changes over time. can lead to periodic holes in coverage. 
+
+can be reduced using more than one prf 
+
+
+
+
+- less clutter beeing seen by the antenna sidelobes.
+- no clutter free region
+
+
+
+
+30
+
+* AMTI
+
+When a radar is monted on a moving platform such as ...ship, plane
+ * The doppler frequency shift from clutter is no longer at zero frequency
+
+ * Ways to compensate: 
+
+   Slow moving platform and low scanning frequency -> practical to compensate by changing the frequency of the coho reference ocillatro. if the speed is known
+
+* Also possible to mixig it with a frequency equal to the clutter doppler. 
+
+* many blind speeds, 
+
+31 
+* The effect on SNR
+    - Coherent integration of MTI pulses are used and using that teqcnique will because MTI processing correlates independent noise. 
+    - result in a loss of 1-2db dependent of how many delay line cancelers you use
+
+ - Area MTI
+    - Strore the amplitude of the echoes at each scan and subtracted the stored signal from similar data to the next scan. Results in a cancellation of echos from stationary clutter, but echos from moving targets appear. This does not depend on the doppler frequency, does not have limitations of blind speed 
+
+- Needs a large frequency spectrum 
+
+
+* Coherent on recieve
+    - Used to describe an MTI radar that uses a power oscillator at the transmitter. At each pulse, the phase of the puse is random from pulse to pulse. Provide a coherent reference at the receiver. 
+    
+* Adaptive MTI
+    - n-point delay-line canceler ,whose filter weights and therefore it's frequency response are determined by the clutter seen by the radar. 
+
+* Frequency Agility and MTI
+
+    - Shift operating frequency 
+    - Not compatible with doppler processing
+    -   
+
+Can be said that is impove detection of slowly moving targets in clutter by decorrelation the clutter echo. 
+
+It can be shown that freq agility does not decorrelate the clutter effectively when the clutter are rayleigh distrubiated . 
+
+pulse dopler radar incres
