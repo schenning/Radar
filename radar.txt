@@ -48,7 +48,8 @@ can be reduced using more than one prf
 - less clutter beeing seen by the antenna sidelobes.
 - no clutter free region
 
-
+29 
+Can remove altitude return by gating , whereas in high prf one must use filtering. 
 
 
 30
